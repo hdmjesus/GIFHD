@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const AddCategory = ({ setCategories }) => {
-  const [InputValue, setInputValue] = useState(" ");
+  const [InputValue, setInputValue] = useState();
   const [ShowCategoriAlert, setShowCategoriAlert] = useState(false);
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -24,7 +24,7 @@ const AddCategory = ({ setCategories }) => {
         type="text"
         name="categories"
         id="categories"
-        placeholder="Search Categories"
+        placeholder="Search"
         value={InputValue}
         onChange={handleInputChange}
       />

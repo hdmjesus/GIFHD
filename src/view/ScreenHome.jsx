@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import AddCategory from "./Componets/Add/Category";
-import GifGrid from "./Componets/Gif/Grid/Grid";
+import AddCategory from "../Componets/Add/Category";
+import GifGrid from "../Componets/Gif/Grid/Category";
 
 const GifExpertApp = () => {
   const [Categories, setCategories] = useState([]);
@@ -11,8 +11,8 @@ const GifExpertApp = () => {
   // };
 
   return (
-    <section>
-      <h2>GifExpertApp</h2>
+    <section className="Home">
+      <h2>GIFHD</h2>
       <AddCategory setCategories={setCategories} />
       <hr />
       <ol className="gifs">
